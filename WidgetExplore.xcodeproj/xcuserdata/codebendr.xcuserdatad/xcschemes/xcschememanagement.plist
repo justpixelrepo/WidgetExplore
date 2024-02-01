@@ -4,15 +4,78 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>WidgetExplore.xcscheme_^#shared#^_</key>
+		<key>BatteryWidgetExtension.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>GraphWidgetExtension.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>PhotoWidgetExtension.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>QuoteExtensionExtension.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>TodoWidgetExtensionExtension.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>WeatherWidgetExtension.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>WidgetExplore.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 		<key>WidgetInsightsExtension.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>9F27EE772B1B644200620485</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9F6B513B2B1B6ED4004CFC34</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9FB770192AFFE94D00B17B05</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9FC7DFE22AD43F2700CCD70D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9FC7DFF72AD440D100CCD70D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9FE3537D2AF2D583002FB2DC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

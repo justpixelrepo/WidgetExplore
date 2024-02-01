@@ -11,7 +11,8 @@ import SwiftUI
 struct WidgetExploreApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            //ContentView()
+            TodoContentView()
         }
     }
 }

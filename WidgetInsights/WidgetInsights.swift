@@ -43,13 +43,19 @@ struct WidgetInsightsEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
-        VStack {
-            Text("Time:")
-            Text(entry.date, style: .time)
+        ZStack {
+           
+             
+            VStack {
+                Text("Time:")
+                Text(entry.date, style: .time)
 
-            Text("Emoji:")
-            Text(entry.emoji)
+                Text("Emoji:")
+                Text(entry.emoji)
+            }
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        
     }
 }
 
@@ -58,17 +64,12 @@ struct WidgetInsights: Widget {
 
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
-            if #available(iOS 17.0, *) {
-                WidgetInsightsEntryView(entry: entry)
-                    .containerBackground(.fill.tertiary, for: .widget)
-            } else {
-                WidgetInsightsEntryView(entry: entry)
-                    .padding()
-                    .background()
-            }
+            WidgetInsightsEntryView(entry: entry)
+                .containerBackground(.indigo.gradient, for: .widget)
         }
         .configurationDisplayName("My Widget")
         .description("This is an example widget.")
+        .supportedFamilies([.systemSmall])
     }
 }
 
@@ -79,9 +80,4 @@ struct WidgetInsights: Widget {
     SimpleEntry(date: .now, emoji: "🤩")
 }
 
-#Preview(as: .systemMedium) {
-    WidgetInsights()
-} timeline: {
-    SimpleEntry(date: .now, emoji: "😀")
-    SimpleEntry(date: .now, emoji: "🤩")
-}
+

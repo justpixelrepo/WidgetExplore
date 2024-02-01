@@ -3,29 +3,123 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F27EE792B1B644200620485 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC7DFFA2AD440D100CCD70D /* WidgetKit.framework */; };
+		9F27EE7A2B1B644200620485 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC7DFFC2AD440D100CCD70D /* SwiftUI.framework */; };
+		9F27EE852B1B644500620485 /* GraphWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9F27EE782B1B644200620485 /* GraphWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9F27EE992B1B647B00620485 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F27EE912B1B647B00620485 /* Assets.xcassets */; };
+		9F27EEA72B1B66F800620485 /* GraphWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F27EE9A2B1B65BF00620485 /* GraphWidgetBundle.swift */; };
+		9F27EEA82B1B66F800620485 /* GraphWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F27EEA02B1B65BF00620485 /* GraphWidget.swift */; };
+		9F27EEA92B1B66F800620485 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F27EE9C2B1B65BF00620485 /* AppModel.swift */; };
+		9F27EEAA2B1B66F800620485 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F27EE9F2B1B65BF00620485 /* AppIntent.swift */; };
+		9F27EEAB2B1B66F800620485 /* Downloads.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F27EE9D2B1B65BF00620485 /* Downloads.swift */; };
+		9F5174062B2EA0C5000E0C94 /* WidgetInsightsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC7DFFF2AD440D100CCD70D /* WidgetInsightsBundle.swift */; };
+		9F51740C2B2F1492000E0C94 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC7DFFA2AD440D100CCD70D /* WidgetKit.framework */; };
+		9F51740D2B2F1492000E0C94 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC7DFFC2AD440D100CCD70D /* SwiftUI.framework */; };
+		9F5174102B2F1492000E0C94 /* QuoteExtensionBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F51740F2B2F1492000E0C94 /* QuoteExtensionBundle.swift */; };
+		9F5174122B2F1492000E0C94 /* QuoteExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5174112B2F1492000E0C94 /* QuoteExtension.swift */; };
+		9F5174162B2F1494000E0C94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F5174152B2F1494000E0C94 /* Assets.xcassets */; };
+		9F51741A2B2F1494000E0C94 /* QuoteExtensionExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9F51740B2B2F1492000E0C94 /* QuoteExtensionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9F5174232B2FBA45000E0C94 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC7DFFA2AD440D100CCD70D /* WidgetKit.framework */; };
+		9F5174242B2FBA45000E0C94 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC7DFFC2AD440D100CCD70D /* SwiftUI.framework */; };
+		9F5174272B2FBA46000E0C94 /* PhotoWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5174262B2FBA46000E0C94 /* PhotoWidgetBundle.swift */; };
+		9F5174292B2FBA46000E0C94 /* PhotoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5174282B2FBA46000E0C94 /* PhotoWidget.swift */; };
+		9F51742B2B2FBA48000E0C94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F51742A2B2FBA48000E0C94 /* Assets.xcassets */; };
+		9F51742F2B2FBA48000E0C94 /* PhotoWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9F5174222B2FBA45000E0C94 /* PhotoWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9F6B513D2B1B6ED4004CFC34 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC7DFFA2AD440D100CCD70D /* WidgetKit.framework */; };
+		9F6B513E2B1B6ED4004CFC34 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC7DFFC2AD440D100CCD70D /* SwiftUI.framework */; };
+		9F6B51412B1B6ED4004CFC34 /* WeatherWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6B51402B1B6ED4004CFC34 /* WeatherWidgetBundle.swift */; };
+		9F6B51432B1B6ED4004CFC34 /* WeatherWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6B51422B1B6ED4004CFC34 /* WeatherWidget.swift */; };
+		9F6B51452B1B6ED4004CFC34 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6B51442B1B6ED4004CFC34 /* AppIntent.swift */; };
+		9F6B51472B1B6ED5004CFC34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F6B51462B1B6ED5004CFC34 /* Assets.xcassets */; };
+		9F6B514B2B1B6ED5004CFC34 /* WeatherWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9F6B513C2B1B6ED4004CFC34 /* WeatherWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9F6B51512B1B6FBD004CFC34 /* OpenWeatherMap in Frameworks */ = {isa = PBXBuildFile; productRef = 9F6B51502B1B6FBD004CFC34 /* OpenWeatherMap */; };
+		9F6B51532B1C48B3004CFC34 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6B51522B1C48B3004CFC34 /* WeatherManager.swift */; };
+		9F6B51542B1C48B3004CFC34 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6B51522B1C48B3004CFC34 /* WeatherManager.swift */; };
+		9F8BD4FB2B26A6C600AD7C77 /* OpenWeatherMap in Frameworks */ = {isa = PBXBuildFile; productRef = 9F8BD4FA2B26A6C600AD7C77 /* OpenWeatherMap */; };
+		9F9170332B0035D400018817 /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9170322B0035D400018817 /* TodoView.swift */; };
+		9F9170342B0035D400018817 /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9170322B0035D400018817 /* TodoView.swift */; };
+		9FB7701B2AFFE94D00B17B05 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC7DFFA2AD440D100CCD70D /* WidgetKit.framework */; };
+		9FB7701C2AFFE94D00B17B05 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC7DFFC2AD440D100CCD70D /* SwiftUI.framework */; };
+		9FB7701F2AFFE94D00B17B05 /* TodoWidgetExtensionBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB7701E2AFFE94D00B17B05 /* TodoWidgetExtensionBundle.swift */; };
+		9FB770212AFFE94D00B17B05 /* TodoWidgetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB770202AFFE94D00B17B05 /* TodoWidgetExtension.swift */; };
+		9FB770232AFFE94F00B17B05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FB770222AFFE94F00B17B05 /* Assets.xcassets */; };
+		9FB770272AFFE94F00B17B05 /* TodoWidgetExtensionExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9FB7701A2AFFE94D00B17B05 /* TodoWidgetExtensionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9FB7702D2AFFE9E700B17B05 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB7702C2AFFE9E700B17B05 /* TodoItem.swift */; };
+		9FB7702E2AFFE9E700B17B05 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB7702C2AFFE9E700B17B05 /* TodoItem.swift */; };
+		9FB770302AFFEA0D00B17B05 /* TodoContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB7702F2AFFEA0D00B17B05 /* TodoContentView.swift */; };
+		9FB770312AFFEA0D00B17B05 /* TodoContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB7702F2AFFEA0D00B17B05 /* TodoContentView.swift */; };
 		9FC7DFE72AD43F2700CCD70D /* WidgetExploreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC7DFE62AD43F2700CCD70D /* WidgetExploreApp.swift */; };
 		9FC7DFE92AD43F2700CCD70D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC7DFE82AD43F2700CCD70D /* ContentView.swift */; };
 		9FC7DFEB2AD43F2800CCD70D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FC7DFEA2AD43F2800CCD70D /* Assets.xcassets */; };
 		9FC7DFEE2AD43F2800CCD70D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FC7DFED2AD43F2800CCD70D /* Preview Assets.xcassets */; };
 		9FC7DFFB2AD440D100CCD70D /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC7DFFA2AD440D100CCD70D /* WidgetKit.framework */; };
 		9FC7DFFD2AD440D100CCD70D /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC7DFFC2AD440D100CCD70D /* SwiftUI.framework */; };
-		9FC7E0002AD440D100CCD70D /* WidgetInsightsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC7DFFF2AD440D100CCD70D /* WidgetInsightsBundle.swift */; };
 		9FC7E0022AD440D100CCD70D /* WidgetInsights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC7E0012AD440D100CCD70D /* WidgetInsights.swift */; };
 		9FC7E0042AD440D300CCD70D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FC7E0032AD440D300CCD70D /* Assets.xcassets */; };
 		9FC7E0082AD440D300CCD70D /* WidgetInsightsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9FC7DFF82AD440D100CCD70D /* WidgetInsightsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9FDAF75E2AD64A2D003F74A5 /* StaticWidgetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDAF75D2AD64A2D003F74A5 /* StaticWidgetEntry.swift */; };
+		9FDAF7602AD64C5B003F74A5 /* StaticWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDAF75F2AD64C5B003F74A5 /* StaticWidgetView.swift */; };
+		9FE3537F2AF2D583002FB2DC /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC7DFFA2AD440D100CCD70D /* WidgetKit.framework */; };
+		9FE353802AF2D583002FB2DC /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC7DFFC2AD440D100CCD70D /* SwiftUI.framework */; };
+		9FE353832AF2D583002FB2DC /* BatteryWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE353822AF2D583002FB2DC /* BatteryWidgetBundle.swift */; };
+		9FE353852AF2D583002FB2DC /* BatteryWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE353842AF2D583002FB2DC /* BatteryWidget.swift */; };
+		9FE353872AF2D584002FB2DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FE353862AF2D584002FB2DC /* Assets.xcassets */; };
+		9FE3538B2AF2D584002FB2DC /* BatteryWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9FE3537E2AF2D583002FB2DC /* BatteryWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		9F27EE832B1B644500620485 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FC7DFDB2AD43F2700CCD70D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F27EE772B1B644200620485;
+			remoteInfo = GraphWidgetExtension;
+		};
+		9F5174182B2F1494000E0C94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FC7DFDB2AD43F2700CCD70D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F51740A2B2F1492000E0C94;
+			remoteInfo = QuoteExtensionExtension;
+		};
+		9F51742D2B2FBA48000E0C94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FC7DFDB2AD43F2700CCD70D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F5174212B2FBA45000E0C94;
+			remoteInfo = PhotoWidgetExtension;
+		};
+		9F6B51492B1B6ED5004CFC34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FC7DFDB2AD43F2700CCD70D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F6B513B2B1B6ED4004CFC34;
+			remoteInfo = WeatherWidgetExtension;
+		};
+		9FB770252AFFE94F00B17B05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FC7DFDB2AD43F2700CCD70D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FB770192AFFE94D00B17B05;
+			remoteInfo = TodoWidgetExtensionExtension;
+		};
 		9FC7E0062AD440D300CCD70D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9FC7DFDB2AD43F2700CCD70D /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9FC7DFF72AD440D100CCD70D;
 			remoteInfo = WidgetInsightsExtension;
+		};
+		9FE353892AF2D584002FB2DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FC7DFDB2AD43F2700CCD70D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FE3537D2AF2D583002FB2DC;
+			remoteInfo = BatteryWidgetExtension;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -36,7 +130,13 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				9F51742F2B2FBA48000E0C94 /* PhotoWidgetExtension.appex in Embed Foundation Extensions */,
+				9FB770272AFFE94F00B17B05 /* TodoWidgetExtensionExtension.appex in Embed Foundation Extensions */,
+				9F51741A2B2F1494000E0C94 /* QuoteExtensionExtension.appex in Embed Foundation Extensions */,
+				9FE3538B2AF2D584002FB2DC /* BatteryWidgetExtension.appex in Embed Foundation Extensions */,
 				9FC7E0082AD440D300CCD70D /* WidgetInsightsExtension.appex in Embed Foundation Extensions */,
+				9F27EE852B1B644500620485 /* GraphWidgetExtension.appex in Embed Foundation Extensions */,
+				9F6B514B2B1B6ED5004CFC34 /* WeatherWidgetExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -44,6 +144,41 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9F27EE782B1B644200620485 /* GraphWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GraphWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F27EE822B1B644500620485 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F27EE912B1B647B00620485 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F27EE9A2B1B65BF00620485 /* GraphWidgetBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphWidgetBundle.swift; sourceTree = "<group>"; };
+		9F27EE9C2B1B65BF00620485 /* AppModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		9F27EE9D2B1B65BF00620485 /* Downloads.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Downloads.swift; sourceTree = "<group>"; };
+		9F27EE9F2B1B65BF00620485 /* AppIntent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		9F27EEA02B1B65BF00620485 /* GraphWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphWidget.swift; sourceTree = "<group>"; };
+		9F51740B2B2F1492000E0C94 /* QuoteExtensionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = QuoteExtensionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F51740F2B2F1492000E0C94 /* QuoteExtensionBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteExtensionBundle.swift; sourceTree = "<group>"; };
+		9F5174112B2F1492000E0C94 /* QuoteExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteExtension.swift; sourceTree = "<group>"; };
+		9F5174152B2F1494000E0C94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F5174172B2F1494000E0C94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F5174222B2FBA45000E0C94 /* PhotoWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PhotoWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F5174262B2FBA46000E0C94 /* PhotoWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoWidgetBundle.swift; sourceTree = "<group>"; };
+		9F5174282B2FBA46000E0C94 /* PhotoWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoWidget.swift; sourceTree = "<group>"; };
+		9F51742A2B2FBA48000E0C94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F51742C2B2FBA48000E0C94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F6B513C2B1B6ED4004CFC34 /* WeatherWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WeatherWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F6B51402B1B6ED4004CFC34 /* WeatherWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherWidgetBundle.swift; sourceTree = "<group>"; };
+		9F6B51422B1B6ED4004CFC34 /* WeatherWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherWidget.swift; sourceTree = "<group>"; };
+		9F6B51442B1B6ED4004CFC34 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		9F6B51462B1B6ED5004CFC34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F6B51482B1B6ED5004CFC34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F6B51522B1C48B3004CFC34 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		9F9170322B0035D400018817 /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
+		9FB770152AFFE89100B17B05 /* WidgetExplore.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WidgetExplore.entitlements; sourceTree = "<group>"; };
+		9FB7701A2AFFE94D00B17B05 /* TodoWidgetExtensionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TodoWidgetExtensionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FB7701E2AFFE94D00B17B05 /* TodoWidgetExtensionBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoWidgetExtensionBundle.swift; sourceTree = "<group>"; };
+		9FB770202AFFE94D00B17B05 /* TodoWidgetExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoWidgetExtension.swift; sourceTree = "<group>"; };
+		9FB770222AFFE94F00B17B05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9FB770242AFFE94F00B17B05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FB7702B2AFFE95A00B17B05 /* TodoWidgetExtensionExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TodoWidgetExtensionExtension.entitlements; sourceTree = "<group>"; };
+		9FB7702C2AFFE9E700B17B05 /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
+		9FB7702F2AFFEA0D00B17B05 /* TodoContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoContentView.swift; sourceTree = "<group>"; };
 		9FC7DFE32AD43F2700CCD70D /* WidgetExplore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WidgetExplore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FC7DFE62AD43F2700CCD70D /* WidgetExploreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetExploreApp.swift; sourceTree = "<group>"; };
 		9FC7DFE82AD43F2700CCD70D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,13 +191,67 @@
 		9FC7E0012AD440D100CCD70D /* WidgetInsights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetInsights.swift; sourceTree = "<group>"; };
 		9FC7E0032AD440D300CCD70D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FC7E0052AD440D300CCD70D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FDAF75D2AD64A2D003F74A5 /* StaticWidgetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticWidgetEntry.swift; sourceTree = "<group>"; };
+		9FDAF75F2AD64C5B003F74A5 /* StaticWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticWidgetView.swift; sourceTree = "<group>"; };
+		9FE3537E2AF2D583002FB2DC /* BatteryWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BatteryWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FE353822AF2D583002FB2DC /* BatteryWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryWidgetBundle.swift; sourceTree = "<group>"; };
+		9FE353842AF2D583002FB2DC /* BatteryWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryWidget.swift; sourceTree = "<group>"; };
+		9FE353862AF2D584002FB2DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9FE353882AF2D584002FB2DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9F27EE752B1B644200620485 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F27EE7A2B1B644200620485 /* SwiftUI.framework in Frameworks */,
+				9F27EE792B1B644200620485 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F5174082B2F1492000E0C94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F51740D2B2F1492000E0C94 /* SwiftUI.framework in Frameworks */,
+				9F51740C2B2F1492000E0C94 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F51741F2B2FBA45000E0C94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F5174242B2FBA45000E0C94 /* SwiftUI.framework in Frameworks */,
+				9F5174232B2FBA45000E0C94 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F6B51392B1B6ED4004CFC34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F6B513E2B1B6ED4004CFC34 /* SwiftUI.framework in Frameworks */,
+				9F8BD4FB2B26A6C600AD7C77 /* OpenWeatherMap in Frameworks */,
+				9F6B513D2B1B6ED4004CFC34 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FB770172AFFE94D00B17B05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FB7701C2AFFE94D00B17B05 /* SwiftUI.framework in Frameworks */,
+				9FB7701B2AFFE94D00B17B05 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9FC7DFE02AD43F2700CCD70D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F6B51512B1B6FBD004CFC34 /* OpenWeatherMap in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,14 +264,99 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9FE3537B2AF2D583002FB2DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FE353802AF2D583002FB2DC /* SwiftUI.framework in Frameworks */,
+				9FE3537F2AF2D583002FB2DC /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F27EE7B2B1B644200620485 /* GraphWidget */ = {
+			isa = PBXGroup;
+			children = (
+				9F27EE9F2B1B65BF00620485 /* AppIntent.swift */,
+				9F27EE912B1B647B00620485 /* Assets.xcassets */,
+				9F27EEA02B1B65BF00620485 /* GraphWidget.swift */,
+				9F27EE9A2B1B65BF00620485 /* GraphWidgetBundle.swift */,
+				9F27EE9B2B1B65BF00620485 /* Model */,
+				9F27EE822B1B644500620485 /* Info.plist */,
+			);
+			path = GraphWidget;
+			sourceTree = "<group>";
+		};
+		9F27EE9B2B1B65BF00620485 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9F27EE9C2B1B65BF00620485 /* AppModel.swift */,
+				9F27EE9D2B1B65BF00620485 /* Downloads.swift */,
+			);
+			name = Model;
+			path = ../../../../../Downloads/WidgetsDemo/GraphWidget/Model;
+			sourceTree = "<group>";
+		};
+		9F51740E2B2F1492000E0C94 /* QuoteExtension */ = {
+			isa = PBXGroup;
+			children = (
+				9F51740F2B2F1492000E0C94 /* QuoteExtensionBundle.swift */,
+				9F5174112B2F1492000E0C94 /* QuoteExtension.swift */,
+				9F5174152B2F1494000E0C94 /* Assets.xcassets */,
+				9F5174172B2F1494000E0C94 /* Info.plist */,
+			);
+			path = QuoteExtension;
+			sourceTree = "<group>";
+		};
+		9F5174252B2FBA46000E0C94 /* PhotoWidget */ = {
+			isa = PBXGroup;
+			children = (
+				9F5174262B2FBA46000E0C94 /* PhotoWidgetBundle.swift */,
+				9F5174282B2FBA46000E0C94 /* PhotoWidget.swift */,
+				9F51742A2B2FBA48000E0C94 /* Assets.xcassets */,
+				9F51742C2B2FBA48000E0C94 /* Info.plist */,
+			);
+			path = PhotoWidget;
+			sourceTree = "<group>";
+		};
+		9F6B513F2B1B6ED4004CFC34 /* WeatherWidget */ = {
+			isa = PBXGroup;
+			children = (
+				9F6B51402B1B6ED4004CFC34 /* WeatherWidgetBundle.swift */,
+				9F6B51422B1B6ED4004CFC34 /* WeatherWidget.swift */,
+				9F6B51442B1B6ED4004CFC34 /* AppIntent.swift */,
+				9F6B51462B1B6ED5004CFC34 /* Assets.xcassets */,
+				9F6B51482B1B6ED5004CFC34 /* Info.plist */,
+			);
+			path = WeatherWidget;
+			sourceTree = "<group>";
+		};
+		9FB7701D2AFFE94D00B17B05 /* TodoWidgetExtension */ = {
+			isa = PBXGroup;
+			children = (
+				9FB7701E2AFFE94D00B17B05 /* TodoWidgetExtensionBundle.swift */,
+				9FB770202AFFE94D00B17B05 /* TodoWidgetExtension.swift */,
+				9FB770222AFFE94F00B17B05 /* Assets.xcassets */,
+				9FB770242AFFE94F00B17B05 /* Info.plist */,
+			);
+			path = TodoWidgetExtension;
+			sourceTree = "<group>";
+		};
 		9FC7DFDA2AD43F2700CCD70D = {
 			isa = PBXGroup;
 			children = (
+				9FB7702B2AFFE95A00B17B05 /* TodoWidgetExtensionExtension.entitlements */,
+				9FDAF75C2AD649F4003F74A5 /* StaticWidget */,
 				9FC7DFE52AD43F2700CCD70D /* WidgetExplore */,
 				9FC7DFFE2AD440D100CCD70D /* WidgetInsights */,
+				9FE353812AF2D583002FB2DC /* BatteryWidget */,
+				9FB7701D2AFFE94D00B17B05 /* TodoWidgetExtension */,
+				9F27EE7B2B1B644200620485 /* GraphWidget */,
+				9F6B513F2B1B6ED4004CFC34 /* WeatherWidget */,
+				9F51740E2B2F1492000E0C94 /* QuoteExtension */,
+				9F5174252B2FBA46000E0C94 /* PhotoWidget */,
 				9FC7DFF92AD440D100CCD70D /* Frameworks */,
 				9FC7DFE42AD43F2700CCD70D /* Products */,
 			);
@@ -93,6 +367,12 @@
 			children = (
 				9FC7DFE32AD43F2700CCD70D /* WidgetExplore.app */,
 				9FC7DFF82AD440D100CCD70D /* WidgetInsightsExtension.appex */,
+				9FE3537E2AF2D583002FB2DC /* BatteryWidgetExtension.appex */,
+				9FB7701A2AFFE94D00B17B05 /* TodoWidgetExtensionExtension.appex */,
+				9F27EE782B1B644200620485 /* GraphWidgetExtension.appex */,
+				9F6B513C2B1B6ED4004CFC34 /* WeatherWidgetExtension.appex */,
+				9F51740B2B2F1492000E0C94 /* QuoteExtensionExtension.appex */,
+				9F5174222B2FBA45000E0C94 /* PhotoWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,10 +380,15 @@
 		9FC7DFE52AD43F2700CCD70D /* WidgetExplore */ = {
 			isa = PBXGroup;
 			children = (
+				9FB770152AFFE89100B17B05 /* WidgetExplore.entitlements */,
 				9FC7DFE62AD43F2700CCD70D /* WidgetExploreApp.swift */,
 				9FC7DFE82AD43F2700CCD70D /* ContentView.swift */,
 				9FC7DFEA2AD43F2800CCD70D /* Assets.xcassets */,
 				9FC7DFEC2AD43F2800CCD70D /* Preview Content */,
+				9FB7702C2AFFE9E700B17B05 /* TodoItem.swift */,
+				9FB7702F2AFFEA0D00B17B05 /* TodoContentView.swift */,
+				9F9170322B0035D400018817 /* TodoView.swift */,
+				9F6B51522B1C48B3004CFC34 /* WeatherManager.swift */,
 			);
 			path = WidgetExplore;
 			sourceTree = "<group>";
@@ -136,9 +421,117 @@
 			path = WidgetInsights;
 			sourceTree = "<group>";
 		};
+		9FDAF75C2AD649F4003F74A5 /* StaticWidget */ = {
+			isa = PBXGroup;
+			children = (
+				9FDAF75D2AD64A2D003F74A5 /* StaticWidgetEntry.swift */,
+				9FDAF75F2AD64C5B003F74A5 /* StaticWidgetView.swift */,
+			);
+			path = StaticWidget;
+			sourceTree = "<group>";
+		};
+		9FE353812AF2D583002FB2DC /* BatteryWidget */ = {
+			isa = PBXGroup;
+			children = (
+				9FE353822AF2D583002FB2DC /* BatteryWidgetBundle.swift */,
+				9FE353842AF2D583002FB2DC /* BatteryWidget.swift */,
+				9FE353862AF2D584002FB2DC /* Assets.xcassets */,
+				9FE353882AF2D584002FB2DC /* Info.plist */,
+			);
+			path = BatteryWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9F27EE772B1B644200620485 /* GraphWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F27EE862B1B644500620485 /* Build configuration list for PBXNativeTarget "GraphWidgetExtension" */;
+			buildPhases = (
+				9F27EE742B1B644200620485 /* Sources */,
+				9F27EE752B1B644200620485 /* Frameworks */,
+				9F27EE762B1B644200620485 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GraphWidgetExtension;
+			productName = GraphWidgetExtension;
+			productReference = 9F27EE782B1B644200620485 /* GraphWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		9F51740A2B2F1492000E0C94 /* QuoteExtensionExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F51741B2B2F1495000E0C94 /* Build configuration list for PBXNativeTarget "QuoteExtensionExtension" */;
+			buildPhases = (
+				9F5174072B2F1492000E0C94 /* Sources */,
+				9F5174082B2F1492000E0C94 /* Frameworks */,
+				9F5174092B2F1492000E0C94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuoteExtensionExtension;
+			productName = QuoteExtensionExtension;
+			productReference = 9F51740B2B2F1492000E0C94 /* QuoteExtensionExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		9F5174212B2FBA45000E0C94 /* PhotoWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F5174302B2FBA48000E0C94 /* Build configuration list for PBXNativeTarget "PhotoWidgetExtension" */;
+			buildPhases = (
+				9F51741E2B2FBA45000E0C94 /* Sources */,
+				9F51741F2B2FBA45000E0C94 /* Frameworks */,
+				9F5174202B2FBA45000E0C94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoWidgetExtension;
+			productName = PhotoWidgetExtension;
+			productReference = 9F5174222B2FBA45000E0C94 /* PhotoWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		9F6B513B2B1B6ED4004CFC34 /* WeatherWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F6B514C2B1B6ED5004CFC34 /* Build configuration list for PBXNativeTarget "WeatherWidgetExtension" */;
+			buildPhases = (
+				9F6B51382B1B6ED4004CFC34 /* Sources */,
+				9F6B51392B1B6ED4004CFC34 /* Frameworks */,
+				9F6B513A2B1B6ED4004CFC34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeatherWidgetExtension;
+			packageProductDependencies = (
+				9F8BD4FA2B26A6C600AD7C77 /* OpenWeatherMap */,
+			);
+			productName = WeatherWidgetExtension;
+			productReference = 9F6B513C2B1B6ED4004CFC34 /* WeatherWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		9FB770192AFFE94D00B17B05 /* TodoWidgetExtensionExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FB770282AFFE94F00B17B05 /* Build configuration list for PBXNativeTarget "TodoWidgetExtensionExtension" */;
+			buildPhases = (
+				9FB770162AFFE94D00B17B05 /* Sources */,
+				9FB770172AFFE94D00B17B05 /* Frameworks */,
+				9FB770182AFFE94D00B17B05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TodoWidgetExtensionExtension;
+			productName = TodoWidgetExtensionExtension;
+			productReference = 9FB7701A2AFFE94D00B17B05 /* TodoWidgetExtensionExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		9FC7DFE22AD43F2700CCD70D /* WidgetExplore */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9FC7DFF12AD43F2800CCD70D /* Build configuration list for PBXNativeTarget "WidgetExplore" */;
@@ -152,8 +545,17 @@
 			);
 			dependencies = (
 				9FC7E0072AD440D300CCD70D /* PBXTargetDependency */,
+				9FE3538A2AF2D584002FB2DC /* PBXTargetDependency */,
+				9FB770262AFFE94F00B17B05 /* PBXTargetDependency */,
+				9F27EE842B1B644500620485 /* PBXTargetDependency */,
+				9F6B514A2B1B6ED5004CFC34 /* PBXTargetDependency */,
+				9F5174192B2F1494000E0C94 /* PBXTargetDependency */,
+				9F51742E2B2FBA48000E0C94 /* PBXTargetDependency */,
 			);
 			name = WidgetExplore;
+			packageProductDependencies = (
+				9F6B51502B1B6FBD004CFC34 /* OpenWeatherMap */,
+			);
 			productName = WidgetExplore;
 			productReference = 9FC7DFE32AD43F2700CCD70D /* WidgetExplore.app */;
 			productType = "com.apple.product-type.application";
@@ -175,6 +577,23 @@
 			productReference = 9FC7DFF82AD440D100CCD70D /* WidgetInsightsExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		9FE3537D2AF2D583002FB2DC /* BatteryWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FE3538E2AF2D585002FB2DC /* Build configuration list for PBXNativeTarget "BatteryWidgetExtension" */;
+			buildPhases = (
+				9FE3537A2AF2D583002FB2DC /* Sources */,
+				9FE3537B2AF2D583002FB2DC /* Frameworks */,
+				9FE3537C2AF2D583002FB2DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BatteryWidgetExtension;
+			productName = BatteryWidgetExtension;
+			productReference = 9FE3537E2AF2D583002FB2DC /* BatteryWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -182,19 +601,38 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1500;
+				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					9F27EE772B1B644200620485 = {
+						CreatedOnToolsVersion = 15.1;
+						LastSwiftMigration = 1510;
+					};
+					9F51740A2B2F1492000E0C94 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					9F5174212B2FBA45000E0C94 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					9F6B513B2B1B6ED4004CFC34 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					9FB770192AFFE94D00B17B05 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
 					9FC7DFE22AD43F2700CCD70D = {
 						CreatedOnToolsVersion = 15.0;
 					};
 					9FC7DFF72AD440D100CCD70D = {
 						CreatedOnToolsVersion = 15.0;
 					};
+					9FE3537D2AF2D583002FB2DC = {
+						CreatedOnToolsVersion = 15.0;
+					};
 				};
 			};
 			buildConfigurationList = 9FC7DFDE2AD43F2700CCD70D /* Build configuration list for PBXProject "WidgetExplore" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -202,17 +640,66 @@
 				Base,
 			);
 			mainGroup = 9FC7DFDA2AD43F2700CCD70D;
+			packageReferences = (
+				9F6B514F2B1B6FBD004CFC34 /* XCRemoteSwiftPackageReference "OpenWeatherMap" */,
+			);
 			productRefGroup = 9FC7DFE42AD43F2700CCD70D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				9FC7DFE22AD43F2700CCD70D /* WidgetExplore */,
+				9F6B513B2B1B6ED4004CFC34 /* WeatherWidgetExtension */,
 				9FC7DFF72AD440D100CCD70D /* WidgetInsightsExtension */,
+				9FE3537D2AF2D583002FB2DC /* BatteryWidgetExtension */,
+				9FB770192AFFE94D00B17B05 /* TodoWidgetExtensionExtension */,
+				9F27EE772B1B644200620485 /* GraphWidgetExtension */,
+				9F51740A2B2F1492000E0C94 /* QuoteExtensionExtension */,
+				9F5174212B2FBA45000E0C94 /* PhotoWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9F27EE762B1B644200620485 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F27EE992B1B647B00620485 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F5174092B2F1492000E0C94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F5174162B2F1494000E0C94 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F5174202B2FBA45000E0C94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F51742B2B2FBA48000E0C94 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F6B513A2B1B6ED4004CFC34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F6B51472B1B6ED5004CFC34 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FB770182AFFE94D00B17B05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FB770232AFFE94F00B17B05 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9FC7DFE12AD43F2700CCD70D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -230,14 +717,79 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9FE3537C2AF2D583002FB2DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FE353872AF2D584002FB2DC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9F27EE742B1B644200620485 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F27EEA82B1B66F800620485 /* GraphWidget.swift in Sources */,
+				9F27EEAB2B1B66F800620485 /* Downloads.swift in Sources */,
+				9F27EEAA2B1B66F800620485 /* AppIntent.swift in Sources */,
+				9F27EEA92B1B66F800620485 /* AppModel.swift in Sources */,
+				9F27EEA72B1B66F800620485 /* GraphWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F5174072B2F1492000E0C94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F5174122B2F1492000E0C94 /* QuoteExtension.swift in Sources */,
+				9F5174102B2F1492000E0C94 /* QuoteExtensionBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F51741E2B2FBA45000E0C94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F5174292B2FBA46000E0C94 /* PhotoWidget.swift in Sources */,
+				9F5174272B2FBA46000E0C94 /* PhotoWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F6B51382B1B6ED4004CFC34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F6B51432B1B6ED4004CFC34 /* WeatherWidget.swift in Sources */,
+				9F6B51412B1B6ED4004CFC34 /* WeatherWidgetBundle.swift in Sources */,
+				9F6B51542B1C48B3004CFC34 /* WeatherManager.swift in Sources */,
+				9F6B51452B1B6ED4004CFC34 /* AppIntent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FB770162AFFE94D00B17B05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FB770312AFFEA0D00B17B05 /* TodoContentView.swift in Sources */,
+				9FB7701F2AFFE94D00B17B05 /* TodoWidgetExtensionBundle.swift in Sources */,
+				9F9170342B0035D400018817 /* TodoView.swift in Sources */,
+				9FB7702E2AFFE9E700B17B05 /* TodoItem.swift in Sources */,
+				9FB770212AFFE94D00B17B05 /* TodoWidgetExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9FC7DFDF2AD43F2700CCD70D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F6B51532B1C48B3004CFC34 /* WeatherManager.swift in Sources */,
+				9FB770302AFFEA0D00B17B05 /* TodoContentView.swift in Sources */,
 				9FC7DFE92AD43F2700CCD70D /* ContentView.swift in Sources */,
+				9F9170332B0035D400018817 /* TodoView.swift in Sources */,
+				9FB7702D2AFFE9E700B17B05 /* TodoItem.swift in Sources */,
 				9FC7DFE72AD43F2700CCD70D /* WidgetExploreApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,22 +798,346 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F5174062B2EA0C5000E0C94 /* WidgetInsightsBundle.swift in Sources */,
+				9FDAF7602AD64C5B003F74A5 /* StaticWidgetView.swift in Sources */,
 				9FC7E0022AD440D100CCD70D /* WidgetInsights.swift in Sources */,
-				9FC7E0002AD440D100CCD70D /* WidgetInsightsBundle.swift in Sources */,
+				9FDAF75E2AD64A2D003F74A5 /* StaticWidgetEntry.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FE3537A2AF2D583002FB2DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FE353832AF2D583002FB2DC /* BatteryWidgetBundle.swift in Sources */,
+				9FE353852AF2D583002FB2DC /* BatteryWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		9F27EE842B1B644500620485 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F27EE772B1B644200620485 /* GraphWidgetExtension */;
+			targetProxy = 9F27EE832B1B644500620485 /* PBXContainerItemProxy */;
+		};
+		9F5174192B2F1494000E0C94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F51740A2B2F1492000E0C94 /* QuoteExtensionExtension */;
+			targetProxy = 9F5174182B2F1494000E0C94 /* PBXContainerItemProxy */;
+		};
+		9F51742E2B2FBA48000E0C94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F5174212B2FBA45000E0C94 /* PhotoWidgetExtension */;
+			targetProxy = 9F51742D2B2FBA48000E0C94 /* PBXContainerItemProxy */;
+		};
+		9F6B514A2B1B6ED5004CFC34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F6B513B2B1B6ED4004CFC34 /* WeatherWidgetExtension */;
+			targetProxy = 9F6B51492B1B6ED5004CFC34 /* PBXContainerItemProxy */;
+		};
+		9FB770262AFFE94F00B17B05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FB770192AFFE94D00B17B05 /* TodoWidgetExtensionExtension */;
+			targetProxy = 9FB770252AFFE94F00B17B05 /* PBXContainerItemProxy */;
+		};
 		9FC7E0072AD440D300CCD70D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9FC7DFF72AD440D100CCD70D /* WidgetInsightsExtension */;
 			targetProxy = 9FC7E0062AD440D300CCD70D /* PBXContainerItemProxy */;
 		};
+		9FE3538A2AF2D584002FB2DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FE3537D2AF2D583002FB2DC /* BatteryWidgetExtension */;
+			targetProxy = 9FE353892AF2D584002FB2DC /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		9F27EE872B1B644500620485 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CLCZFAVBGV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GraphWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GraphWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.justpixel.WidgetExplore.GraphWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9F27EE882B1B644500620485 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CLCZFAVBGV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GraphWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GraphWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.justpixel.WidgetExplore.GraphWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9F51741C2B2F1495000E0C94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CLCZFAVBGV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QuoteExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = QuoteExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.justpixel.WidgetExplore.QuoteExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9F51741D2B2F1495000E0C94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CLCZFAVBGV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QuoteExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = QuoteExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.justpixel.WidgetExplore.QuoteExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9F5174312B2FBA48000E0C94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CLCZFAVBGV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PhotoWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PhotoWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.justpixel.WidgetExplore.PhotoWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9F5174322B2FBA48000E0C94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CLCZFAVBGV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PhotoWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PhotoWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.justpixel.WidgetExplore.PhotoWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9F6B514D2B1B6ED5004CFC34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CLCZFAVBGV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WeatherWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WeatherWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.justpixel.WidgetExplore.WeatherWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9F6B514E2B1B6ED5004CFC34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CLCZFAVBGV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WeatherWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WeatherWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.justpixel.WidgetExplore.WeatherWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9FB770292AFFE94F00B17B05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = TodoWidgetExtensionExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CLCZFAVBGV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TodoWidgetExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TodoWidgetExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.justpixel.WidgetExplore.TodoWidgetExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9FB7702A2AFFE94F00B17B05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = TodoWidgetExtensionExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CLCZFAVBGV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TodoWidgetExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TodoWidgetExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.justpixel.WidgetExplore.TodoWidgetExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		9FC7DFEF2AD43F2800CCD70D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -387,6 +1263,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WidgetExplore/WidgetExplore.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WidgetExplore/Preview Content\"";
@@ -417,6 +1294,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WidgetExplore/WidgetExplore.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WidgetExplore/Preview Content\"";
@@ -495,9 +1373,108 @@
 			};
 			name = Release;
 		};
+		9FE3538C2AF2D585002FB2DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CLCZFAVBGV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BatteryWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BatteryWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.justpixel.WidgetExplore.BatteryWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9FE3538D2AF2D585002FB2DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CLCZFAVBGV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BatteryWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BatteryWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.justpixel.WidgetExplore.BatteryWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9F27EE862B1B644500620485 /* Build configuration list for PBXNativeTarget "GraphWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F27EE872B1B644500620485 /* Debug */,
+				9F27EE882B1B644500620485 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F51741B2B2F1495000E0C94 /* Build configuration list for PBXNativeTarget "QuoteExtensionExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F51741C2B2F1495000E0C94 /* Debug */,
+				9F51741D2B2F1495000E0C94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F5174302B2FBA48000E0C94 /* Build configuration list for PBXNativeTarget "PhotoWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F5174312B2FBA48000E0C94 /* Debug */,
+				9F5174322B2FBA48000E0C94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F6B514C2B1B6ED5004CFC34 /* Build configuration list for PBXNativeTarget "WeatherWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F6B514D2B1B6ED5004CFC34 /* Debug */,
+				9F6B514E2B1B6ED5004CFC34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FB770282AFFE94F00B17B05 /* Build configuration list for PBXNativeTarget "TodoWidgetExtensionExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FB770292AFFE94F00B17B05 /* Debug */,
+				9FB7702A2AFFE94F00B17B05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9FC7DFDE2AD43F2700CCD70D /* Build configuration list for PBXProject "WidgetExplore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -525,7 +1502,40 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		9FE3538E2AF2D585002FB2DC /* Build configuration list for PBXNativeTarget "BatteryWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FE3538C2AF2D585002FB2DC /* Debug */,
+				9FE3538D2AF2D585002FB2DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9F6B514F2B1B6FBD004CFC34 /* XCRemoteSwiftPackageReference "OpenWeatherMap" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AnthonyArzola/OpenWeatherMap";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9F6B51502B1B6FBD004CFC34 /* OpenWeatherMap */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F6B514F2B1B6FBD004CFC34 /* XCRemoteSwiftPackageReference "OpenWeatherMap" */;
+			productName = OpenWeatherMap;
+		};
+		9F8BD4FA2B26A6C600AD7C77 /* OpenWeatherMap */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F6B514F2B1B6FBD004CFC34 /* XCRemoteSwiftPackageReference "OpenWeatherMap" */;
+			productName = OpenWeatherMap;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9FC7DFDB2AD43F2700CCD70D /* Project object */;
 }

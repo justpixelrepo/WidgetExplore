@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "openweathermap",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AnthonyArzola/OpenWeatherMap",
+      "state" : {
+        "revision" : "60d51a90e6095f5694b27d4d09db8870fbb69b16",
+        "version" : "0.1.7"
+      }
+    }
+  ],
+  "version" : 2
+}
